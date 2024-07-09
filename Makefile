@@ -6,7 +6,7 @@ DOMAIN=example.com
 all: dist/extension.js
 
 node_modules: package.json
-	npm install
+	pnpm install
 
 dist/extension.js dist/prefs.js: node_modules
 	tsc
